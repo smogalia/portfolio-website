@@ -33,14 +33,38 @@
                 <a href="#">facebook</a>
                 <a href="#">mail</a>
               </div>
+</section>
 
-              
+              <section id="contact">
+                <h2>Contact</h2>
+                <form id="contact-form" action="traitement-formulaire.php" method="post">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sujet">Sujet :</label>
+                        <input type="text" id="sujet" name="sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required ></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            
+              <section>
                 <div class="contact-container">
                   <div class="contact-header">
                     <h3>Appelez-moi!</h3>
                   </div>
                   <div class="contact-body">
-                    <a class="text-secondary" href="tel:+262123456">+262123456</a>
+                    <a class="text-secondary" href="tel:+262692123456">+262 692 12 34 56</a>
                   </div>
                 </div>
                 <div class="contact-container">
