@@ -45,6 +45,8 @@ nav ul li a:hover{
 }
 
 
+/*accueil*/
+/*  --------------------------------------------*/
 #accueil{
     min-height: 100vh; /* Prend toute la hauteur de l'écran */
     background-image: url("../../images/lego_office.jpg"); /* Image de fond */
@@ -54,6 +56,7 @@ nav ul li a:hover{
     justify-content: center; /* Centrer horizontalement le contenu */
     align-items: center; /* Centrer verticalement le contenu */
     width: 100%; /* Prend toute la largeur */
+    border-radius: 8px;
 }
 
 #text-presentation{
@@ -76,7 +79,7 @@ nav ul li a:hover{
 }
 
 .text-bienvenue{
-    font-size: 22px;
+    font-size: 34px;
     text-align: center;
 }
 
@@ -97,7 +100,7 @@ nav ul li a:hover{
     color: var(--color-accent-hover); /* Texte rouge */
     border: 2px solid var(--color-accent-hover); /* Bordure rouge */
     padding: 10px 20px; /* Taille du bouton réduite */
-    font-size: 14px; /* Taille de texte plus petite */
+    font-size: 16px; /* Taille de texte plus petite */
     text-decoration: none;
     text-transform: uppercase; /* Texte en majuscules pour un effet stylé */
     cursor: pointer;
@@ -108,6 +111,82 @@ nav ul li a:hover{
     background-color: var(--color-accent-hover);; /* Fond rouge au survol */
     color: white; /* Texte noir au survol */
     border: 2px solid var(--gray-color); /* Bordure noire au survol */
+}
+/**************************************************/
+/*          about ***********/
+
+
+#about{
+    
+    display: flex;
+    justify-items: center;
+    align-items:center;
+    gap: 20px;
+
+}
+.about-image-container{
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 50px;
+   flex-shrink: 0;
+}
+
+.about-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius:8px;
+}
+
+.about-description{
+    flex-grow: 1;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 1.25em;
+}
+/*             -----------------------------------------*/
+
+#competences h2{
+    color: white;
+}
+
+.competences-container{
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 5%;
+}
+
+.competence{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 0px 1.25rem;
+}
+
+.competence .image-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.competence .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 1rem;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
